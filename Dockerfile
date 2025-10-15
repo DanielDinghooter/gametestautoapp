@@ -6,7 +6,7 @@ FROM node:18-alpine
 WORKDIR /app
 
 # Copy package files first and install dependencies
-copy packages*.json ./
+COPY packages*.json ./
 RUN npm install
 
 # copy the rest of the code
