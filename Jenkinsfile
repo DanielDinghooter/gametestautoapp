@@ -23,7 +23,7 @@ pipeline {
 
       stage('BUILD-AND-TAG') {
             agent {
-                label 'CYBR3120-01-app-server'
+                label 'Appserver'
             }
             steps {
                 script {
@@ -38,7 +38,7 @@ pipeline {
 
         stage('POST-TO-DOCKERHUB') {    
             agent {
-                label 'CYBR3120-01-app-server'
+                label 'Appserver'
             }
             steps {
                 script {
@@ -70,7 +70,7 @@ pipeline {
 
         stage('DEPLOYMENT') {    
             agent {
-                label 'CYBR3120-01-app-server'
+                label 'Appserver'
             }
             steps {
                 echo 'Starting deployment using docker-compose...'
