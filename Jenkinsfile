@@ -15,7 +15,7 @@ pipeline {
             }
         }
 
-        stage('SAST-TEST') {
+        stage('SAST-TEST') 
         {
             agent any
             steps
@@ -26,6 +26,7 @@ pipeline {
                         snykInstallation: 'Snyk-installations',
                         snykTokenID: 'snyk-token',
                         severity: 'critical'
+                    )
             }
         }
     }
