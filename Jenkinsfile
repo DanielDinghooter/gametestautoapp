@@ -24,7 +24,7 @@ pipeline {
                 {
                     snykSecurity(
                         snykInstallation: 'Snyk-installations',
-                        snykTokenID: 'snyk-token',
+                        snykTokenID: 'Snyk-API-Token',
                         severity: 'critical'
                     )
             }
