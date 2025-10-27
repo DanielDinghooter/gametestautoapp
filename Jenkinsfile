@@ -28,7 +28,7 @@ pipeline {
                         severity: 'critical'
             }
         }
-
+    }
       stage('BUILD-AND-TAG') {
             agent {
                 label 'Appserver'
