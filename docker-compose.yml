@@ -3,6 +3,7 @@ services:
   gameapptestauto:
     image: domdiej/domautogametest
     build: .
+    container_name: gametestautoapp01
     ports:
       - "80:3000"
     environment:
