@@ -24,12 +24,12 @@ pipeline {
                 {
                     snykSecurity(
                         snykInstallation: 'Snyk-installations',
-                        snykTokenID: 'snyk-token',
+                        snykTokenId: 'snyk-token',
                         severity: 'critical'
                     )
-            }
-        }
-    }
+             }
+         }
+     }
       stage('BUILD-AND-TAG') {
             agent {
                 label 'Appserver'
